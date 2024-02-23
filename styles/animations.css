@@ -1,0 +1,109 @@
+/* Опишите в этом файле все keyframes для проекта и стили анимаций иконки Like.
+
+Будьте внимательны! Для корректной работы скриптов на этом сайте нужно, чтобы в HTML некоторые классы были названы особым образом:
+✦ theme-dark — класс тёмной темы
+✦ theme-light — класс светлой темы
+✦ like-icon — для svg-иконки анимированного сердца
+✦ card__like-button — для кнопки Like рядом с иконкой
+✦ card__icon-button — для кнопки, оборачивающей иконку
+✦ card__icon-button — для кнопки, оборачивающей иконку
+✦ is-liked — для обозначения состояния лайкнутой иконки в виде сердца
+✦ button__text — для обозначения текстового элемента внутри кнопки
+
+Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
+*/
+ @keyframes arrow-switch {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-4px);
+    }
+ }
+
+ .like-icon .core {
+    fill: var(--background-color);
+    transition: fill 0.03s linear;
+ }
+
+ .like-icon:hover .core {
+    fill: var(--main-color);
+    transition: fill 0.3s linear;
+ }
+
+ .like-icon:hover .main-body {
+    fill: var(--main-color);
+    transition: fill 0.3s linear 0.05s;
+ }
+
+ .like-icon .main-body {
+    fill: var(--background-color);
+    transition: fill 0.3s linear;
+ }
+
+ .like-icon:active .core,
+ .like-icon:active .main-body {
+    fill: var(--sparcle-heart);
+    transition: fill 0.3s linear;
+ }
+/* active like klick */
+ .like-icon.is-liked .core {
+    fill: var(--sparcle-heart);
+    transition: fill 0.3s linear;
+ }
+
+ .like-icon.is-liked .main-body {
+    fill: var(--sparcle-heart);
+    transition: fill 0.3s linear 0.05s;
+ }
+
+ .like-icon.is-liked .contour {
+    fill: var(--sparcle-heart);
+    transition: fill 0.3s linear 0.06s;
+ }
+
+ .like-icon.is-liked .heart {
+    animation: scale-heart 0.3s ease-in alternate 0.1s;
+    transform-origin: center;
+ }
+
+ .like-icon.is-liked .sparks {
+    animation: scale-sparks 0.3s ease-in alternate 0.1s;
+ }
+
+ .like-icon .contour {
+    fill: var(--main-color);
+    transition: fill 0.1 linear;
+ }
+
+ @keyframes scale-heart {
+    from {
+        scale: 1;
+    }
+
+    50% {
+        scale: 1.5;
+    }
+
+    to {
+       scale: 1;
+    }
+ }
+
+ @keyframes scale-sparks {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+ }
+
+
+
+
+
+ 
+
