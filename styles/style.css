@@ -81,15 +81,11 @@
 }
 
 .theme-menu__button {
-  display: grid;
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-template-columns: 16px min-content;
-  justify-items: center;
+  display: flex;
+  gap: 4px;
   background: transparent;
   text-transform: uppercase;
   border: none;
-  transform-origin: left;
   position: relative;
 }
 
@@ -114,27 +110,22 @@ button:focus {
   outline: none;
 }
 
-.theme-menu__button:enabled::after {
+.theme-menu__button::after {
   content: "";
   display: block;
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: 0; 
   width: 0%;
+  transform-origin: left;
   transform: scaleX(0);
   border-bottom: 2px solid var(--main-color);
   transition: transform 0.3s ease;
 }
 
-.theme-menu__button:enabled:focus-visible::after {
-  content: "";
-  display: block;
-  position: absolute;
-  width: 100%;
-  transform-origin: left;
+.theme-menu__button:focus-visible::after {
   transform: scaleX(1);
-  border-bottom: 2px solid var(--main-color);
-  transition: transform 0.3s ease;
+  width: 100%;
 }
 
 .theme-menu__button:disabled::before {
@@ -198,7 +189,6 @@ button:focus {
   flex-direction: column;
   justify-content: space-between;
   gap: 25px;
-  /* min-height: 224px; */
   border-top: var(--content-border-size) solid var(--content-border-color);
 }
 
@@ -246,8 +236,6 @@ button:focus {
 .card__like-button {
   min-width: 130px;
   padding: 9px 17px;
-  border: var(--content-border-size) solid var(--content-border-color);
-  background: var(--background-color);
   position: relative;
   overflow: hidden;
 }
@@ -260,6 +248,7 @@ button:focus {
   mix-blend-mode: difference;
 }
 
+.save-button::before,
 .card__like-button::before {
   content: "";
   background-color: var(--main-color);
@@ -269,11 +258,6 @@ button:focus {
   transform: translateX(-100%);
   transition: transform 0.5s ease-in-out;
   z-index: 1;
-}
-
-.card__like-button:hover::before {
-  transform: translateX(0);
-  transition: transform 0.5s ease-in-out;
 }
 
 .like-icon {
@@ -289,10 +273,8 @@ button:focus {
   gap: 8px;
   flex-wrap: wrap;
   align-items: center;
-  background: var(--background-color);
   padding: 15px 20px;
   margin-bottom: 100px;
-  border: var(--content-border-size) solid var(--content-border-color);
   position: relative;
   overflow: hidden;
 }
@@ -300,21 +282,6 @@ button:focus {
 .icon-floppy {
   width: 21px;
   height: 21px;
-}
-
-.save-button::before {
-  content: "";
-  background-color: var(--main-color);
-  position: absolute;
-  inset: 0;
-  display: block;
-  transform: translateX(-100%);
-  transition: transform 0.5s ease-in-out;
-}
-
-.save-button:hover::before {
-  transform: translateX(0);
-  transition: transform 0.5s ease-in-out;
 }
 
 .card-label {
@@ -330,10 +297,19 @@ button:focus {
   text-shadow: 0 0 1px var(--background-color);
 }
 
-.save-button:focus-visible,
-.card__like-button:focus-visible {
+.button:hover::before {
+  transform: translateX(0);
+  transition: transform 0.5s ease-in-out;
+}
+
+.button:focus-visible {
   box-shadow: 2px 2px var(--main-color);
   transition: box-shadow 0.3s ease;
+}
+
+.button {
+  border: var(--content-border-size) solid var(--content-border-color);
+	background: var(--background-color);
 }
 
 @supports ((text-stroke: 1px var(--background-color)) or (-webkit-text-stroke: 1px var(--background-color))) {
@@ -420,10 +396,8 @@ dialog::backdrop {
 
 .close-button {
   width: 100%;
-  background: var(--background-color);
   padding-top: 12.5px;
   padding-bottom: 12.5px;
-  border: var(--content-border-size) solid var(--content-border-color);
 }
 
 .dialog-window:not([open]) {
@@ -435,6 +409,10 @@ dialog::backdrop {
 
 .sparks {
   opacity: 0;
+}
+
+.button {
+
 }
 
 @media (width <= 375px) {
