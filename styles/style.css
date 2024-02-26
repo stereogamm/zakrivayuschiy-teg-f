@@ -163,6 +163,7 @@ button:focus {
   font-weight: var(--accent-font-weight);
   line-height: 22px;
   font-size: var(--card-content-font-size);
+  border-bottom: var(--content-border-size) solid var(--content-border-color);
 }
 
 .image {
@@ -173,14 +174,9 @@ button:focus {
   object-fit: cover;
 }
 
-.card-title {
-  border-bottom: var(--content-border-size) solid var(--content-border-color);
-}
-
 .card-label-conteiner {
   display: block;
   position: relative;
-  
 }
 
 .text-section {
@@ -409,10 +405,6 @@ dialog::backdrop {
 
 .sparks {
   opacity: 0;
-}
-
-.button {
-
 }
 
 @media (width <= 375px) {
