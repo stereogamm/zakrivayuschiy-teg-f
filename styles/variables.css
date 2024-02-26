@@ -6,8 +6,8 @@
     repeating-linear-gradient(90deg, #d3d3d3 0 2px, transparent 2px 4px),
     repeating-linear-gradient(#d3d3d3 0 2px, transparent 2px 4px),
     linear-gradient(#e7e7e7 0.01%, #1a1a1a);
-    --main-font: 'Inter-Variable';
-    --accent-font: 'PressStart2P';
+    --main-font: 'Inter', Helvetica, Arial, sans-serif;
+    --accent-font: 'PressStart2P', 'Fantasy';
     --main-font-weight: 400;
     --accent-font-weight: 700;
     --main-color: #000000;
@@ -18,7 +18,6 @@
     --main-title-size: clamp(0.875rem, 0.6768rem + 0.8458vw, 1.438rem);
     --card-content-font-size: 1.125rem;
     --accent-font-size: 0.875rem;
-    --low-transition: 0.3s ease;
     --text-button-color: #FFFF;
     --sparcle-heart: #FF0000;
 }

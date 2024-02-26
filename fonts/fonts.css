@@ -1,9 +1,9 @@
 /* В этом файле вы импортируете все шрифты для сайта. Один из них вариативный и требует особенной настройки */
 
 @font-face {
-    font-family: 'Inter-Variable';
+    font-family: 'Inter';
     src: 
-        local('Inter-Variable'),
+        local('Inter'),
             url('../fonts/Inter-Variable.woff2') format('woff2 supports variations'),
             url('../fonts/Inter-Variable.woff2') format('woff2-variations');
     font-weight: 400 785; 
