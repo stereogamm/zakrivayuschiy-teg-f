@@ -353,8 +353,7 @@ button:focus {
 }
 
 .second-card-filter {
-  filter: hue-rotate(-90deg);
-  filter: contrast(2.0);
+  filter: hue-rotate(-35deg) contrast(1.0);
 }
 
 .third-card-filter {
@@ -362,8 +361,7 @@ button:focus {
 }
 
 .fourth-card-filter {
-  filter: grayscale(0.7);
-  filter: sepia(60%);
+  filter: grayscale(0.5) sepia(10%);
 }
 
 .fifth-card-filter {
@@ -400,6 +398,8 @@ button:focus {
   font-weight: var(--main-font-weight);
   line-height: 21px;
   text-transform: uppercase;
+  position: fixed;
+  inset: 0;
 }
 
 dialog::backdrop {
@@ -409,10 +409,13 @@ dialog::backdrop {
 
 .dialog-header {
   display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-between;
   align-items: center;
   gap: 20px;
+}
+
+.dialog-header .icon-floppy {
+  width: 39px;
+  height: 39px;
 }
 
 .dialog-window-form {
@@ -427,23 +430,15 @@ dialog::backdrop {
   border: var(--content-border-size) solid var(--content-border-color);
 }
 
-.close-text-button {
+/* .close-text-button {
   text-transform: uppercase;
-}
+} */
 
-.dialog-window .icon-floppy {
-  width: 39px;
-  height: 39px;
-}
+
 
 .dialog-window:not([open]) {
   opacity: 0;
   pointer-events: none;
-}
-
-.dialog-window {
-  position: fixed;
-  inset: 0;
 }
 
 /* HEART BUTTON */

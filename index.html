@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="color-scheme" content="light dark">
     <title>Закрывающий тег</title>
-    <link rel="stylesheet" href="./fonts/fonts.css" />
-    <link rel="stylesheet" href="./styles/variables.css" />
-    <link rel="stylesheet" href="./styles/globals.css" />
-    <link rel="stylesheet" href="./styles/style.css" />
-    <link rel="stylesheet" href="./styles/animations.css" />
-    <link rel="stylesheet" href="./styles/themes.css" />
+    <link rel="stylesheet" href="./fonts/fonts.css">
+    <link rel="stylesheet" href="./styles/variables.css">
+    <link rel="stylesheet" href="./styles/globals.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/animations.css">
+    <link rel="stylesheet" href="./styles/themes.css">
     <link rel="icon" href="./images/favicon_theme.svg" type="image/svg+xml">
     <link rel="icon" href="./images/favicon.ico" sizes="any">
-    <link rel="apple-touch-icon" href="./images/favicon.png"> 
+    <link rel="apple-touch-icon" href="./images/mobile_icon.png"> 
     <script src="./scripts/set-theme.js"></script>
   </head>
   <body class="page">
     <header class="header">
-      <div class="logo">&lt;/html&gt;</div>
+      <span class="logo">&lt;/html&gt;</span>
       <h1 class="main-title">закрывающий тег</h1>
       <nav class="theme-menu header__theme-menu">
         <!-- Не меняйте разметку этого списка, иначе скрипты перестанут работать -->
@@ -50,8 +50,8 @@
       <section class="card card-content">
         <h2 class="card-title">Фритрек и нулевой спринт: Подготовка к работе</h2>
           <div class="card-label-conteiner">
-            <img class="image first-card-filter" src="./images/1.jpg" alt="снежная гора на фоне облаков">
-              <div class="card-label">&lt;start&gt;</div>
+            <img class="image first-card-filter" src="./images/1.jpg" loading="lazy" alt="снежная гора на фоне облаков">
+              <span class="card-label">&lt;start&gt;</span>
           </div>
         <div class="text-section">
           <div class="text-description">
@@ -69,7 +69,7 @@
                 <path class="sparks" fill="var(--sparcle-heart)" d="M36 13h3v3h-3v-3Zm-9 14h3v3h-3v-3Zm-9 6h3v3h-3v-3Zm-9-6h3v3H9v-3ZM24 0h3v3h-3V0Zm9 3h3v3h-3V3ZM3 3h3v3H3V3Zm9-3h3v3h-3V0ZM0 13h3v3H0v-3Z"/>
               </svg>
             </button>
-            <button class="card__like-button card__like-button-condition">
+            <button type="button" class="card__like-button card__like-button-condition">
               <span class="button__text">Like</span>
             </button>
           </div>
@@ -78,8 +78,8 @@
       <section class="card card-content">
         <h2 class="card-title">1 спринт: Я — чистый лист</h2>
           <div class="card-label-conteiner">
-            <img class="image second-card-filter" src="./images/2.jpg" alt="тень человека который озадачен">
-              <div class="card-label">&lt;beginner&gt;</div>
+            <img class="image second-card-filter" src="./images/2.jpg" loading="lazy"  alt="тень человека который озадачен">
+              <span class="card-label">&lt;beginner&gt;</span>
           </div>
         <div class="text-section">
           <div class="text-description">
@@ -87,7 +87,7 @@
             <p class="card-text">На этом этапе мне было очень тяжело. Я думала, что не справлюсь и не смогу усвоить такой объем информации. А самым сложным был тот факт, что дедлайн не за горами и нужно торопиться. </p>
           </div>
           <div class="card-buttons-container">
-            <button class="card__icon-button is-liked">
+            <button type="button" class="card__icon-button is-liked">
               <svg class="like-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 39 36">
                 <g class="heart">
                   <path class="contour" fill="var(--main-color)" d="M12 6H9v3h3V6Zm3 0h-3v3h3V6ZM9 9H6v3h3V9Zm0 3H6v3h3v-3Zm0 3H6v3h3v-3Zm9-9h-3v3h3V6Zm-6 12H9v3h3v-3Zm3 3h-3v3h3v-3Zm3 3h-3v3h3v-3Zm9-18h3v3h-3V6Zm-3 0h3v3h-3V6Zm6 3h3v3h-3V9Zm0 3h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-9-9h3v3h-3V6Zm6 12h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0-18h-3v3h3V9Z"/>
@@ -97,7 +97,7 @@
                 <path class="sparks" fill="var(--sparcle-heart)" d="M36 13h3v3h-3v-3Zm-9 14h3v3h-3v-3Zm-9 6h3v3h-3v-3Zm-9-6h3v3H9v-3ZM24 0h3v3h-3V0Zm9 3h3v3h-3V3ZM3 3h3v3H3V3Zm9-3h3v3h-3V0ZM0 13h3v3H0v-3Z"/>
               </svg>
             </button>
-            <button class="card__like-button card__like-button-condition">
+            <button type="button" class="card__like-button card__like-button-condition">
               <span class="button__text">Like</span>
             </button>
           </div>
@@ -106,8 +106,8 @@
       <section class="card card-content">
         <h2 class="card-title">1 спринт: А если не получится?</h2>
           <div class="card-label-conteiner">
-            <img class="image third-card-filter" src="./images/3.jpg" alt="футбольное поле с беговыми дорожками">
-              <div class="card-label">&lt;doubts&gt;</div>
+            <img class="image third-card-filter" src="./images/3.jpg" loading="lazy" alt="футбольное поле с беговыми дорожками">
+              <span class="card-label">&lt;doubts&gt;</span>
           </div>
         <div class="text-section">
           <div class="text-description">
@@ -115,7 +115,7 @@
             <p class="card-text">После успешной сдачи первой проектной работы я была бесконечно рада, что преодолела неуверенность и сомнения и сформулировала для себя принцип "Важно начать и двигаться вперед, шаг за шагом. Из этих шагов и складывается опыт". </p>
           </div>
           <div class="card-buttons-container">
-            <button class="card__icon-button is-liked">
+            <button type="button" class="card__icon-button is-liked">
               <svg class="like-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 39 36">
                 <g class="heart">
                   <path class="contour" fill="var(--main-color)" d="M12 6H9v3h3V6Zm3 0h-3v3h3V6ZM9 9H6v3h3V9Zm0 3H6v3h3v-3Zm0 3H6v3h3v-3Zm9-9h-3v3h3V6Zm-6 12H9v3h3v-3Zm3 3h-3v3h3v-3Zm3 3h-3v3h3v-3Zm9-18h3v3h-3V6Zm-3 0h3v3h-3V6Zm6 3h3v3h-3V9Zm0 3h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-9-9h3v3h-3V6Zm6 12h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0-18h-3v3h3V9Z"/>
@@ -125,7 +125,7 @@
                 <path class="sparks" fill="var(--sparcle-heart)" d="M36 13h3v3h-3v-3Zm-9 14h3v3h-3v-3Zm-9 6h3v3h-3v-3Zm-9-6h3v3H9v-3ZM24 0h3v3h-3V0Zm9 3h3v3h-3V3ZM3 3h3v3H3V3Zm9-3h3v3h-3V0ZM0 13h3v3H0v-3Z"/>
               </svg>
             </button>
-            <button class="card__like-button card__like-button-condition">
+            <button type="button" class="card__like-button card__like-button-condition">
               <span class="button__text">Like</span>
             </button>
           </div>
@@ -134,8 +134,8 @@
       <section class="card card-content">
         <h2 class="card-title">2 спринт: Погоня за идеалом</h2>
           <div class="card-label-conteiner">
-            <img class="image fourth-card-filter" src="./images/4.jpg" alt="человек едет на мопеде">
-              <div class="card-label">&lt;desigions&gt;</div>
+            <img class="image fourth-card-filter" src="./images/4.jpg" loading="lazy" alt="человек едет на мопеде">
+              <span class="card-label">&lt;solutions&gt;</span>
           </div>
         <div class="text-section">
           <div class="text-description">
@@ -143,7 +143,7 @@
             <p class="card-text">Этот этап обучения дал мне возможность понять, что всегда можно сделать лучше, но важно вовремя остановиться, побороть свой перфекционизм и помнить об ограниченности времени.</p>
           </div>
           <div class="card-buttons-container">
-            <button class="card__icon-button is-liked">
+            <button type="button" class="card__icon-button is-liked">
               <svg class="like-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 39 36">
                 <g class="heart">
                   <path class="contour" fill="var(--main-color)" d="M12 6H9v3h3V6Zm3 0h-3v3h3V6ZM9 9H6v3h3V9Zm0 3H6v3h3v-3Zm0 3H6v3h3v-3Zm9-9h-3v3h3V6Zm-6 12H9v3h3v-3Zm3 3h-3v3h3v-3Zm3 3h-3v3h3v-3Zm9-18h3v3h-3V6Zm-3 0h3v3h-3V6Zm6 3h3v3h-3V9Zm0 3h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-9-9h3v3h-3V6Zm6 12h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0-18h-3v3h3V9Z"/>
@@ -153,7 +153,7 @@
                 <path class="sparks" fill="var(--sparcle-heart)" d="M36 13h3v3h-3v-3Zm-9 14h3v3h-3v-3Zm-9 6h3v3h-3v-3Zm-9-6h3v3H9v-3ZM24 0h3v3h-3V0Zm9 3h3v3h-3V3ZM3 3h3v3H3V3Zm9-3h3v3h-3V0ZM0 13h3v3H0v-3Z"/>
               </svg>
             </button>
-            <button class="card__like-button card__like-button-condition">
+            <button type="button" class="card__like-button card__like-button-condition">
               <span class="button__text">Like</span>
             </button>
           </div>
@@ -162,7 +162,7 @@
       <section class="card card-content">
         <h2 class="card-title">2 спринт: О тех, кто рядом</h2>
           <div class="card-label-conteiner">
-            <img class="image fifth-card-filter" src="./images/5.jpg" alt="люди на подъемном кране развешивают баннер">
+            <img class="image fifth-card-filter" src="./images/5.jpg" loading="lazy" alt="люди на подъемном кране развешивают баннер">
               <div class="card-label">my support</div>
           </div>
         <div class="text-section">
@@ -171,7 +171,7 @@
             <p class="card-text">Все так. Мои близкие и друзья поддерживали меня в минуты отчаяния и грусти, коих было не так уж и мало, а прогулки с любимой собакой давали возможность отвлечься от учёбы и пополнить запас сил для последующей работы над проектом. </p>
           </div>
           <div class="card-buttons-container">
-            <button class="card__icon-button is-liked">
+            <button type="button" class="card__icon-button is-liked">
               <svg class="like-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 39 36">
                 <g class="heart">
                   <path class="contour" fill="var(--main-color)" d="M12 6H9v3h3V6Zm3 0h-3v3h3V6ZM9 9H6v3h3V9Zm0 3H6v3h3v-3Zm0 3H6v3h3v-3Zm9-9h-3v3h3V6Zm-6 12H9v3h3v-3Zm3 3h-3v3h3v-3Zm3 3h-3v3h3v-3Zm9-18h3v3h-3V6Zm-3 0h3v3h-3V6Zm6 3h3v3h-3V9Zm0 3h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-9-9h3v3h-3V6Zm6 12h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0-18h-3v3h3V9Z"/>
@@ -181,7 +181,7 @@
                 <path class="sparks" fill="var(--sparcle-heart)" d="M36 13h3v3h-3v-3Zm-9 14h3v3h-3v-3Zm-9 6h3v3h-3v-3Zm-9-6h3v3H9v-3ZM24 0h3v3h-3V0Zm9 3h3v3h-3V3ZM3 3h3v3H3V3Zm9-3h3v3h-3V0ZM0 13h3v3H0v-3Z"/>
               </svg>
             </button>
-            <button class="card__like-button card__like-button-condition">
+            <button type="button" class="card__like-button card__like-button-condition">
               <span class="button__text">Like</span>
             </button>
           </div>
@@ -190,8 +190,8 @@
       <section class="card card-content">
         <h2 class="card-title">3 спринт: Обходные стратегии</h2>
           <div class="card-label-conteiner">
-            <img class="image sixth-card-filter" src="./images/6.jpg" alt="колесо обозрения на фоне ночного неба">
-              <div class="card-label">&lt;points of view&gt;</div>
+            <img class="image sixth-card-filter" src="./images/6.jpg" loading="lazy" alt="колесо обозрения на фоне ночного неба">
+              <span class="card-label">&lt;points of view&gt;</span>
           </div>
         <div class="text-section">
           <div class="text-description">
@@ -199,7 +199,7 @@
             <p class="card-text">А вот над этим пунктом я всё еще работаю, но, когда в редкие моменты я осознаю, что задачу можно реализовать разными способами - я очень радуюсь этим мыслям и хвалю себя.</p>
           </div>
           <div class="card-buttons-container">
-            <button class="card__icon-button is-liked">
+            <button type="button" class="card__icon-button is-liked">
               <svg class="like-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 39 36">
                 <g class="heart">
                   <path class="contour" fill="var(--main-color)" d="M12 6H9v3h3V6Zm3 0h-3v3h3V6ZM9 9H6v3h3V9Zm0 3H6v3h3v-3Zm0 3H6v3h3v-3Zm9-9h-3v3h3V6Zm-6 12H9v3h3v-3Zm3 3h-3v3h3v-3Zm3 3h-3v3h3v-3Zm9-18h3v3h-3V6Zm-3 0h3v3h-3V6Zm6 3h3v3h-3V9Zm0 3h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-9-9h3v3h-3V6Zm6 12h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0-18h-3v3h3V9Z"/>
@@ -209,7 +209,7 @@
                 <path class="sparks" fill="var(--sparcle-heart)" d="M36 13h3v3h-3v-3Zm-9 14h3v3h-3v-3Zm-9 6h3v3h-3v-3Zm-9-6h3v3H9v-3ZM24 0h3v3h-3V0Zm9 3h3v3h-3V3ZM3 3h3v3H3V3Zm9-3h3v3h-3V0ZM0 13h3v3H0v-3Z"/>
               </svg>
             </button>
-            <button class="card__like-button card__like-button-condition">
+            <button type="button" class="card__like-button card__like-button-condition">
               <span class="button__text">Like</span>
             </button>
           </div>
@@ -218,8 +218,8 @@
       <section class="card card-content">
         <h2 class="card-title">3 спринт: Когда опускаются руки</h2>
           <div class="card-label-conteiner">
-            <img class="image seventh-card-filter" src="./images/7.jpeg" alt="человек плывущий на байдарке по озеру">
-              <div class="card-label">&lt;lifes-style: none;&gt;</div>
+            <img class="image seventh-card-filter" src="./images/7.jpeg" loading="lazy" alt="человек плывущий на байдарке по озеру">
+              <span class="card-label">&lt;lifes-style: none;&gt;</span>
           </div>
         <div class="text-section">
           <div class="text-description">
@@ -227,7 +227,7 @@
             <p class="card-text">В моменты отчаяния я вспоминаю о своей цели. Вспоминаю о том, что, проходя через сложности учёбы, - я расту. </p>
           </div>
           <div class="card-buttons-container">
-            <button class="card__icon-button is-liked">
+            <button type="button" class="card__icon-button">
               <svg class="like-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 39 36">
                 <g class="heart">
                   <path class="contour" fill="var(--main-color)" d="M12 6H9v3h3V6Zm3 0h-3v3h3V6ZM9 9H6v3h3V9Zm0 3H6v3h3v-3Zm0 3H6v3h3v-3Zm9-9h-3v3h3V6Zm-6 12H9v3h3v-3Zm3 3h-3v3h3v-3Zm3 3h-3v3h3v-3Zm9-18h3v3h-3V6Zm-3 0h3v3h-3V6Zm6 3h3v3h-3V9Zm0 3h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-9-9h3v3h-3V6Zm6 12h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0-18h-3v3h3V9Z"/>
@@ -237,7 +237,7 @@
                 <path class="sparks" fill="var(--sparcle-heart)" d="M36 13h3v3h-3v-3Zm-9 14h3v3h-3v-3Zm-9 6h3v3h-3v-3Zm-9-6h3v3H9v-3ZM24 0h3v3h-3V0Zm9 3h3v3h-3V3ZM3 3h3v3H3V3Zm9-3h3v3h-3V0ZM0 13h3v3H0v-3Z"/>
               </svg>
             </button>
-            <button class="card__like-button card__like-button-condition">
+            <button type="button" class="card__like-button card__like-button-condition">
               <span class="button__text">Like</span>
             </button>
           </div>
@@ -246,8 +246,8 @@
       <section class="card card-content">
         <h2 class="card-title">«Сейчас я здесь»</h2>
           <div class="card-label-conteiner">
-            <img class="image eith-card-filter" src="./images/8.jpg" alt="две девушки достают игрушку из игрового автомата на фоне надписи Good Luck">
-              <div class="card-label">&lt;I have a dream&gt;</div>
+            <img class="image eith-card-filter" src="./images/8.jpg" loading="lazy" alt="две девушки достают игрушку из игрового автомата на фоне надписи Good Luck">
+              <span class="card-label">&lt;I have a dream&gt;</span>
           </div>
         <div class="text-section">
           <div class="text-description">
@@ -255,7 +255,7 @@
             <p class="card-text">С каждой проектной работой я все больше убеждаюсь в правильности своего выбора. Ведь так прекрасно наблюдать за тем как из идеи я могу создать прикладные и полезные для других людей вещи. Эта мысль очень меня вдохновляет.</p>
           </div>
           <div class="card-buttons-container">
-            <button class="card__icon-button is-liked">
+            <button type="button" class="card__icon-button is-liked">
               <svg class="like-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 39 36">
                 <g class="heart">
                   <path class="contour" fill="var(--main-color)" d="M12 6H9v3h3V6Zm3 0h-3v3h3V6ZM9 9H6v3h3V9Zm0 3H6v3h3v-3Zm0 3H6v3h3v-3Zm9-9h-3v3h3V6Zm-6 12H9v3h3v-3Zm3 3h-3v3h3v-3Zm3 3h-3v3h3v-3Zm9-18h3v3h-3V6Zm-3 0h3v3h-3V6Zm6 3h3v3h-3V9Zm0 3h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-9-9h3v3h-3V6Zm6 12h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0-18h-3v3h3V9Z"/>
@@ -265,13 +265,13 @@
                 <path class="sparks" fill="var(--sparcle-heart)" d="M36 13h3v3h-3v-3Zm-9 14h3v3h-3v-3Zm-9 6h3v3h-3v-3Zm-9-6h3v3H9v-3ZM24 0h3v3h-3V0Zm9 3h3v3h-3V3ZM3 3h3v3H3V3Zm9-3h3v3h-3V0ZM0 13h3v3H0v-3Z"/>
               </svg>
             </button>
-            <button class="card__like-button card__like-button-condition">
+            <button type="button" class="card__like-button card__like-button-condition">
               <span class="button__text">Like</span>
             </button>
           </div>
         </div>
       </section>
-      <button class="save-button" 
+      <button class="save-button"
         type="button"
         onclick="window['dialog-id'].showModal();"
         aria-controls="dialog-id">
@@ -281,18 +281,17 @@
         <span class="button__text">Сохранить на память</span>
       </button>
       <dialog class="dialog-window" id="dialog-id">
-        <h3 class="dialog-header">
-          <div>
+        <p class="dialog-header">
+          <span>
             <svg class="icon-floppy" viewBox="0 0 21 21">
               <use href="./svg/floppy.svg#floppy"></use>
             </svg>
-          </div>
+          </span>
           Вставьте дискету, чтобы продолжить
-        </h3>
+        </p>
         <form class="dialog-window-form" method="dialog">
-          <button class="close-button">
-              <span class="close-text-button">ok</span>
-              <span class="visually-hidden">Закрыть окно</span>
+          <button class="close-button" >
+              <span class="button__text">OK</span>
             </button>
         </form> 
       </dialog>
