@@ -79,7 +79,7 @@
   text-transform: uppercase;
   border: none;
   position: relative;
-  transition: all 0.3s ease;
+  transition: opacity 0.3s ease;
 }
 
 .theme-menu__button:focus {
