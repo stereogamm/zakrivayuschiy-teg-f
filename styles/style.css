@@ -31,17 +31,9 @@
   background-attachment: fixed;
   background-color: var(--background-color);
   color: var(--main-color);
+  font-variation-settings: "wght" var(--main-font-weight, 400);
 }
-
-  .page {
-    font-variation-settings: "wght" var(--main-font-weight, 400);
-  }
   
-  .card-title {
-    font-variation-settings: "wght" var(--accent-font-weight, 700);
-  }
-
-
 .header {
   height: clamp(327px, 50dvb, 368px);
   width: var(--content-size);
@@ -57,7 +49,7 @@
 
 .logo {
   font-size: var(--logo-size);
-  font-family: var(--accent-font, 'Fantasy');
+  font-family: var(--accent-font, fantasy);
   text-transform: uppercase;
   font-weight: var(--main-font-weight);
   line-height: 4.063rem;
@@ -65,7 +57,7 @@
 }
 
 .main-title {
-  font-family: var(--accent-font, 'Fantasy');
+  font-family: var(--accent-font, fantasy);
   line-height: 1;
   text-transform: uppercase;
   font-size: var(--main-title-size);
@@ -87,12 +79,16 @@
   text-transform: uppercase;
   border: none;
   position: relative;
+  transition: all 0.3s ease;
+}
+
+.theme-menu__button:focus {
+  outline: none;
 }
 
 .theme-menu__button:hover,
 .theme-menu__button:focus,
 .theme-menu__button:disabled {
-  transition: opacity 0.3s ease;
   opacity: 0.6;
 }
 
@@ -101,13 +97,9 @@
 }
 
 .theme-menu__item {
-  font-family: var(--accent-font, 'Fantasy');
+  font-family: var(--accent-font, fantasy);
   font-weight: var(--main-font-weight);
   font-size: 0.875rem;
-}
-
-button:focus {
-  outline: none;
 }
 
 .theme-menu__button::after {
@@ -116,7 +108,7 @@ button:focus {
   position: absolute;
   left: 0;
   bottom: 0; 
-  width: 0%;
+  width: 100%;
   transform-origin: left;
   transform: scaleX(0);
   border-bottom: 2px solid var(--main-color);
@@ -125,7 +117,6 @@ button:focus {
 
 .theme-menu__button:focus-visible::after {
   transform: scaleX(1);
-  width: 100%;
 }
 
 .theme-menu__button:disabled::before {
@@ -160,8 +151,8 @@ button:focus {
   display: flex;
   padding: 3px 24px 3px 10px;
   font-family: var(--main-font, Helvetica, Arial, sans-serif);
-  font-weight: var(--accent-font-weight);
-  line-height: 22px;
+  font-variation-settings: "wght" var(--accent-font-weight, 700);
+  line-height: 1.375rem;
   font-size: var(--card-content-font-size);
   border-bottom: var(--content-border-size) solid var(--content-border-color);
 }
@@ -199,7 +190,7 @@ button:focus {
 .card-text {
   font-family: var(--main-font, Helvetica, Arial, sans-serif);
   font-size: var(--card-content-font-size);
-  line-height: 21px;
+  line-height: 1.313rem;
 }
 
 .card-buttons-container {
@@ -209,16 +200,17 @@ button:focus {
 }
 
 .button__text {
-  font-family: var(--accent-font, 'Fantasy');
+  font-family: var(--accent-font, fantasy);
   font-size: var(--accent-font-size);
   font-weight: var(--main-font-weight);
-  line-height: 12.6px;
+  line-height: 0.788rem;
   color: var(--main-color);
 }
 
 .card__icon-button {
   background: transparent;
   border: 2px solid transparent;
+  transition: border 0.3s ease;
 }
 
 .card__icon-button:focus {
@@ -232,8 +224,6 @@ button:focus {
 .card__like-button {
   min-width: 130px;
   padding: 9px 17px;
-  position: relative;
-  overflow: hidden;
 }
 
 .button__text,
@@ -244,8 +234,7 @@ button:focus {
   mix-blend-mode: difference;
 }
 
-.save-button::before,
-.card__like-button::before {
+.button::before {
   content: "";
   background-color: var(--main-color);
   position: absolute;
@@ -271,8 +260,6 @@ button:focus {
   align-items: center;
   padding: 15px 20px;
   margin-bottom: 100px;
-  position: relative;
-  overflow: hidden;
 }
 
 .icon-floppy {
@@ -286,27 +273,33 @@ button:focus {
   top: 25px;
   text-transform: uppercase;
   color: var(--main-color);
-  font-family: var(--accent-font, 'Fantasy');
+  font-family: var(--accent-font, fantasy);
   font-size: var(--accent-font-size);
   opacity: 50%;
   mix-blend-mode: hard-light;
   text-shadow: 0 0 1px var(--background-color);
 }
 
+.button {
+  border: var(--content-border-size) solid var(--content-border-color);
+	background: var(--background-color);
+  position: relative;
+  overflow: hidden;
+  transition: box-shadow 0.3s ease;
+}
+
 .button:hover::before {
   transform: translateX(0);
-  transition: transform 0.5s ease-in-out;
+}
+
+.button:focus {
+  outline: none;
 }
 
 .button:focus-visible {
   box-shadow: 2px 2px var(--main-color);
-  transition: box-shadow 0.3s ease;
 }
 
-.button {
-  border: var(--content-border-size) solid var(--content-border-color);
-	background: var(--background-color);
-}
 
 @supports ((text-stroke: 1px var(--background-color)) or (-webkit-text-stroke: 1px var(--background-color))) {
   .card-label {
@@ -361,10 +354,10 @@ button:focus {
   background-color: var(--background-color);
   border: var(--content-border-color) solid var(--content-border-size);
   color: var(--main-color);
-  font-family: var(--accent-font, 'Fantasy');
+  font-family: var(--accent-font, fantasy);
   font-size: var(--accent-font-size);
   font-weight: var(--main-font-weight);
-  line-height: 21px;
+  line-height: 1.313rem;
   text-transform: uppercase;
   position: fixed;
   inset: 0;
@@ -408,14 +401,7 @@ dialog::backdrop {
 }
 
 @media (width <= 375px) {
-  .page {
-    max-inline-size: 100%;
-  }
-
-  .text-section {
-    min-height: 329px;
-  }
-
+  
   .icon-floppy {
     width: 28px;
     height: 28px;
@@ -423,7 +409,7 @@ dialog::backdrop {
 
   .save-button {
     flex-direction: column;
-    align-items: center;
     justify-content: center;
   }
+  
 }

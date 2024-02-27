@@ -7,7 +7,7 @@
     repeating-linear-gradient(#d3d3d3 0 2px, transparent 2px 4px),
     linear-gradient(#e7e7e7 0.01%, #1a1a1a);
     --main-font: 'Inter', Helvetica, Arial, sans-serif;
-    --accent-font: 'PressStart2P', 'Fantasy';
+    --accent-font: 'PressStart2P', fantasy;
     --main-font-weight: 400;
     --accent-font-weight: 700;
     --main-color: #000000;
