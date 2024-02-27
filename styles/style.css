@@ -33,7 +33,7 @@
   color: var(--main-color);
   font-variation-settings: "wght" var(--main-font-weight, 400);
 }
-  
+
 .header {
   height: clamp(327px, 50dvb, 368px);
   width: var(--content-size);
@@ -107,7 +107,7 @@
   display: block;
   position: absolute;
   left: 0;
-  bottom: 0; 
+  bottom: 0;
   width: 100%;
   transform-origin: left;
   transform: scaleX(0);
@@ -245,6 +245,10 @@
   z-index: 1;
 }
 
+.button:hover::before {
+  transform: translateX(0);
+}
+
 .like-icon {
   display: block;
   width: 37px;
@@ -260,6 +264,10 @@
   align-items: center;
   padding: 15px 20px;
   margin-bottom: 100px;
+}
+
+.close-button {
+  width: 100%;
 }
 
 .icon-floppy {
@@ -282,14 +290,12 @@
 
 .button {
   border: var(--content-border-size) solid var(--content-border-color);
-	background: var(--background-color);
+  background: var(--background-color);
   position: relative;
   overflow: hidden;
   transition: box-shadow 0.3s ease;
-}
-
-.button:hover::before {
-  transform: translateX(0);
+  padding-top: 12.5px;
+  padding-bottom: 12.5px;
 }
 
 .button:focus {
@@ -300,8 +306,10 @@
   box-shadow: 2px 2px var(--main-color);
 }
 
-
-@supports ((text-stroke: 1px var(--background-color)) or (-webkit-text-stroke: 1px var(--background-color))) {
+@supports (
+  (text-stroke: 1px var(--background-color)) or
+    (-webkit-text-stroke: 1px var(--background-color))
+) {
   .card-label {
     -webkit-text-stroke: 1px var(--background-color);
     text-stroke: 1px var(--background-color);
@@ -314,7 +322,7 @@
 }
 
 .second-card-filter {
-  filter: hue-rotate(-35deg) contrast(1.0);
+  filter: hue-rotate(-35deg) contrast(1);
 }
 
 .third-card-filter {
@@ -383,12 +391,6 @@ dialog::backdrop {
   width: 100%;
 }
 
-.close-button {
-  width: 100%;
-  padding-top: 12.5px;
-  padding-bottom: 12.5px;
-}
-
 .dialog-window:not([open]) {
   opacity: 0;
   pointer-events: none;
@@ -401,7 +403,6 @@ dialog::backdrop {
 }
 
 @media (width <= 375px) {
-  
   .icon-floppy {
     width: 28px;
     height: 28px;
@@ -411,5 +412,4 @@ dialog::backdrop {
     flex-direction: column;
     justify-content: center;
   }
-  
 }
