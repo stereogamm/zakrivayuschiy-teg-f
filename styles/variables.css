@@ -1,4 +1,4 @@
-/* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+/* This file contains all the variable values in their initial state, as well as their changes depending on the device width. */
 
 :root {
     --background-color: #FFFFFF;

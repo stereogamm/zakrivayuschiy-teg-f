@@ -1,18 +1,18 @@
-/* Здесь вы напишете основную часть стилей страницы.
+/* 
 
-Будьте внимательны! Для корректной работы скриптов на этом сайте нужно, чтобы в HTML некоторые классы были названы особым образом:
-✦ theme-dark — класс тёмной темы
-✦ theme-light — класс светлой темы
-✦ like-icon — для svg-иконки анимированного сердца
-✦ card__like-button — для кнопки Like рядом с иконкой
-✦ card__icon-button — для кнопки, оборачивающей иконку
-✦ card__icon-button — для кнопки, оборачивающей иконку
-✦ is-liked — для обозначения состояния лайкнутой иконки в виде сердца
-✦ button__text — для обозначения текстового элемента внутри кнопки
+Be careful! For the scripts on this site to work correctly, some classes in the HTML need to be named in a specific way:
+✦ theme-dark — class for the dark theme
+✦ theme-light — class for the light theme
+✦ like-icon — for the animated heart SVG icon
+✦ card__like-button — for the Like button next to the icon
+✦ card__icon-button — for the button wrapping the icon
+✦ is-liked — to indicate the state of the liked heart icon
+✦ button__text — for the text element inside the button
 
-Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
+Additionally, do not change the HTML of the theme switcher. Its markup also ensures the proper functioning of its script.
 
 */
+
 
 /* HEADER */
 .page {
@@ -285,7 +285,7 @@
   color: var(--main-color);
   font-family: var(--accent-font, fantasy);
   font-size: var(--accent-font-size);
-  opacity: 50%;
+  opacity: 90%;
   mix-blend-mode: hard-light;
   text-shadow: 0 0 1px var(--background-color);
 }
@@ -312,17 +312,17 @@
 ) {
   .card-label {
     -webkit-text-stroke: 1px var(--background-color);
-    text-stroke: 1px var(--background-color);
+    text-decoration-line: 1px var(--background-color);
     text-shadow: none;
   }
 }
 
 .first-card-filter {
-  filter: blur(0.03rem);
+  filter: contrast(1.2);
 }
 
 .second-card-filter {
-  filter: hue-rotate(-35deg) contrast(1);
+  filter: hue-rotate(-65deg) contrast(1);
 }
 
 .third-card-filter {
@@ -330,23 +330,23 @@
 }
 
 .fourth-card-filter {
-  filter: grayscale(0.5) sepia(10%);
+  filter: contrast(1.2);
 }
 
 .fifth-card-filter {
-  filter: sepia(10%);
+  filter: contrast(1.0);
 }
 
 .sixth-card-filter {
-  filter: contrast(1.1);
+  filter: brightness(180%);
 }
 
 .seventh-card-filter {
-  filter: invert(10%);
+  filter: grayscale(1);
 }
 
 .eith-card-filter {
-  filter: brightness(110%);
+  filter: contrast(1.2);
 }
 
 /* DIALOG */

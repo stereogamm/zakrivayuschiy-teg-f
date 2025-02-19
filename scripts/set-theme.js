@@ -1,5 +1,6 @@
-/* Этот скрипт использует имена классов theme-menu__button, theme-dark, theme-light и theme-auto;
-еще атрибуты disabled и data-theme. Поэтому их нельзя менять в HTML. */
+/* This script uses class names theme-menu__button, theme-dark, theme-light, and theme-auto;
+as well as the attributes disabled and data-theme. Therefore, they cannot be changed in the HTML. */
+
 
 function changeTheme(theme) {
   document.documentElement.className = '';
@@ -43,3 +44,5 @@ document.addEventListener('DOMContentLoaded', () => {
     };
   });
 });
+
+
