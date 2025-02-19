@@ -1,6 +1,6 @@
 ## Project "Closing Tag" 💟
 ---
-
+[VIEW DEPLOYED PROJECT](https://closing-tag.vercel.app/)
 ---
 ### Core Technologies
 ✅ HTML\
